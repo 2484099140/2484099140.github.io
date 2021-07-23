@@ -16,12 +16,12 @@
             var problem = prompt('请输入你要做的操作：\n 1.存钱\n2.取钱\n3.当前余额\n4.退出');
             if (problem == 1) {
                 var increase = prompt('请你输入存钱数');
-                total += increase;
+                total += Number(increase);
             } else if (problem == 2) {
                 var reduce = prompt('请你输入取钱数');
-                total -= reduce;
+                total -= Number(reduce);
             } else if (problem == 3) {
-                alert('现在余额是' + total);
+                alert('现在余额是' + Number(total));
             } else if (problem == 4) {
                 alert('点击确定退出成功');
                 break
